@@ -32,7 +32,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @forelse($edukasi as $data)
+                        @foreach($edukasi as $data)
                         <tr>
                             <td class="text-center">{{ $loop->iteration }}</td>
                             <td><img src="{{ asset('storage/' . $data->gambar) }}" style="height: 50px; width: 50px; object-fit: cover; border-radius: 8px;"></td>
@@ -59,11 +59,7 @@
                                 </form>
                             </td>
                         </tr>
-                        @empty
-                        <tr>
-                            <td colspan="4" class="text-center text-muted py-4">Data tidak ditemukan</td>
-                        </tr>
-                        @endforelse
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -167,6 +163,8 @@
             order: [],
             responsive: true,
             autoWidth: false,
+            zeroRecords: "Data tidak ditemukan",
+            emptyTable: "Belum ada data"
             language: {
                 search: "_INPUT_",
                 searchPlaceholder: "Cari...",
