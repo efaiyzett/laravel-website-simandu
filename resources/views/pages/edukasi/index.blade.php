@@ -163,8 +163,6 @@
             order: [],
             responsive: true,
             autoWidth: false,
-            zeroRecords: "Data tidak ditemukan",
-            emptyTable: "Belum ada data"
             language: {
                 search: "_INPUT_",
                 searchPlaceholder: "Cari...",
