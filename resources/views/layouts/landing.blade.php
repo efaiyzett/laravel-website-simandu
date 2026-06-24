@@ -115,7 +115,7 @@
     <nav class="navbar navbar-expand-lg bg-body shadow-sm sticky-top">
         <div class="container-fluid px-lg-5">
             <a class="navbar-brand fw-bold" href="#">
-                <img src="{{ asset('images/Logo_Posyandu.png') }}" alt="" width="35" height="35" class="me-2">
+                <img src="https://uagqdpzbgmzowxkaumod.supabase.co/storage/v1/object/sign/simandu/Logo_Posyandu.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iMzFjNTUyZS04OWJjLTQzNjktYTY0ZS0wZGQ5ZWFmOTA5ZjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJzaW1hbmR1L0xvZ29fUG9zeWFuZHUucG5nIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MjI4NzM5MywiZXhwIjoxODEzODIzMzkzfQ.B06VT7_XfaS5bzHU1ykqqkfhiyZEq6goQOfDjs8k9NU" alt="" width="35" height="35" class="me-2">
                 SIMANDU EUPHORBIA
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -150,7 +150,7 @@
         </div>
         <div class="offcanvas-body p-4">
             <div class="text-center mb-4">
-                <img src="{{ asset('images/Logo_Posyandu.png') }}" width="80" class="mb-3" alt="Logo">
+                <img src="https://uagqdpzbgmzowxkaumod.supabase.co/storage/v1/object/sign/simandu/Logo_Posyandu.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iMzFjNTUyZS04OWJjLTQzNjktYTY0ZS0wZGQ5ZWFmOTA5ZjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJzaW1hbmR1L0xvZ29fUG9zeWFuZHUucG5nIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MjI4NzM5MywiZXhwIjoxODEzODIzMzkzfQ.B06VT7_XfaS5bzHU1ykqqkfhiyZEq6goQOfDjs8k9NU" width="80" class="mb-3" alt="Logo">
                 <h4 class="fw-bold">Selamat Datang</h4>
                 <p class="text-muted">Silakan login untuk mengakses sistem SIMANDU</p>
             </div>
@@ -206,7 +206,7 @@
             <div class="row">
                 <div class="col-lg-5 mb-4">
                     <h4 class="fw-bold mb-3 d-flex align-items-center">
-                        <img src="{{ asset('images/Logo_Posyandu.png') }}" alt="" width="30" class="me-2 bg-white rounded-circle">
+                        <img src="https://uagqdpzbgmzowxkaumod.supabase.co/storage/v1/object/sign/simandu/Logo_Posyandu.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iMzFjNTUyZS04OWJjLTQzNjktYTY0ZS0wZGQ5ZWFmOTA5ZjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJzaW1hbmR1L0xvZ29fUG9zeWFuZHUucG5nIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MjI4NzM5MywiZXhwIjoxODEzODIzMzkzfQ.B06VT7_XfaS5bzHU1ykqqkfhiyZEq6goQOfDjs8k9NU" alt="" width="30" class="me-2 bg-white rounded-circle">
                         SIMANDU
                     </h4>
                     <p class="text-light text-opacity-75 small">
@@ -242,7 +242,7 @@
     </section>
 
     <a href="https://wa.me/6282232799979" class="wa-float" target="_blank">
-        <img src="{{ asset('images/whatsapp.png') }}" alt="WhatsApp">
+        <img src="https://uagqdpzbgmzowxkaumod.supabase.co/storage/v1/object/sign/simandu/whatsapp.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iMzFjNTUyZS04OWJjLTQzNjktYTY0ZS0wZGQ5ZWFmOTA5ZjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJzaW1hbmR1L3doYXRzYXBwLnBuZyIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODIyODc0NzUsImV4cCI6MTgxMzgyMzQ3NX0.ni5M5DP14xjwiYIYuC65iO69UqzdRtQLbiBfwFFW9l0" alt="WhatsApp">
     </a>
 
     <!-- SweetAlert2 js -->

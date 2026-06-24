@@ -15,7 +15,7 @@
                 <a href="#profil" class="btn btn-outline-primary rounded-pill px-4 mt-3 py-2 shadow-sm bg-body">Profil Kami</a>
             </div>
             <div class="col-lg-6 text-center">
-                <img src="{{ asset('images/posyandu2.png') }}"
+                <img src="https://uagqdpzbgmzowxkaumod.supabase.co/storage/v1/object/sign/simandu/posyandu2.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iMzFjNTUyZS04OWJjLTQzNjktYTY0ZS0wZGQ5ZWFmOTA5ZjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJzaW1hbmR1L3Bvc3lhbmR1Mi5wbmciLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzgyMjg3NDQzLCJleHAiOjE4MTM4MjM0NDN9.0ccEiJdD5Z6jTQ5zRdBBm6D3DJC34rbYEGXTKa08t1o"
                     alt="Ilustrasi Posyandu Ibu dan Anak"
                     class="img-fluid rounded-4 shadow border border-3 border-white"
                     style="width: 100%; height: 400px; object-fit: cover;">
@@ -43,16 +43,16 @@
                     </div>
                     <div class="carousel-inner rounded-4 shadow">
                         <div class="carousel-item active">
-                            <img src="{{ asset('images/a (1).jpeg') }}" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 1">
+                            <img src="https://uagqdpzbgmzowxkaumod.supabase.co/storage/v1/object/sign/simandu/a%20(1).jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iMzFjNTUyZS04OWJjLTQzNjktYTY0ZS0wZGQ5ZWFmOTA5ZjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJzaW1hbmR1L2EgKDEpLmpwZWciLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzgyMjg3NTI0LCJleHAiOjE4MTM4MjM1MjR9.hXFYbwKpOSd9xYKNYOLz1nR9i0tCqHS66P7jE2HfAPA" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset('images/a (2).jpeg') }}" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 2">
+                            <img src="https://uagqdpzbgmzowxkaumod.supabase.co/storage/v1/object/sign/simandu/a%20(2).jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iMzFjNTUyZS04OWJjLTQzNjktYTY0ZS0wZGQ5ZWFmOTA5ZjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJzaW1hbmR1L2EgKDIpLmpwZWciLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzgyMjg3NTU3LCJleHAiOjE4MTM4MjM1NTd9.oShWIQTmBn83TEQBiS9i1Mayrp-194vWLqjheqc4cPc" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 2">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset('images/a (3).jpeg') }}" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 3">
+                            <img src="https://uagqdpzbgmzowxkaumod.supabase.co/storage/v1/object/sign/simandu/a%20(3).jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iMzFjNTUyZS04OWJjLTQzNjktYTY0ZS0wZGQ5ZWFmOTA5ZjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJzaW1hbmR1L2EgKDMpLmpwZWciLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzgyMjg3NTczLCJleHAiOjE4MTM4MjM1NzN9.EWLRANeJX88nIk4p1HeRM22qiILacZDr7mVpzbUz0lQ" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 3">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset('images/a (4).jpeg') }}" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 4">
+                            <img src="https://uagqdpzbgmzowxkaumod.supabase.co/storage/v1/object/sign/simandu/a%20(4).jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iMzFjNTUyZS04OWJjLTQzNjktYTY0ZS0wZGQ5ZWFmOTA5ZjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJzaW1hbmR1L2EgKDQpLmpwZWciLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzgyMjg3NTg5LCJleHAiOjE4MTM4MjM1ODl9.Emn04N3WDRDGc6B63Alnv_rhch4saiT3vIggmFBhC_0" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 4">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#profilCarousel" data-bs-slide="prev">
