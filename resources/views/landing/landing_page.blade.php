@@ -15,7 +15,7 @@
                 <a href="#profil" class="btn btn-outline-primary rounded-pill px-4 mt-3 py-2 shadow-sm bg-body">Profil Kami</a>
             </div>
             <div class="col-lg-6 text-center">
-                <img src="{{ asset('storage/images/posyandu2.png') }}"
+                <img src="{{ asset('images/posyandu2.png') }}"
                     alt="Ilustrasi Posyandu Ibu dan Anak"
                     class="img-fluid rounded-4 shadow border border-3 border-white"
                     style="width: 100%; height: 400px; object-fit: cover;">
@@ -43,16 +43,16 @@
                     </div>
                     <div class="carousel-inner rounded-4 shadow">
                         <div class="carousel-item active">
-                            <img src="{{ asset('storage/images/a (1).jpeg') }}" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 1">
+                            <img src="{{ asset('images/a (1).jpeg') }}" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset('storage/images/a (2).jpeg') }}" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 2">
+                            <img src="{{ asset('images/a (2).jpeg') }}" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 2">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset('storage/images/a (3).jpeg') }}" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 3">
+                            <img src="{{ asset('images/a (3).jpeg') }}" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 3">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset('storage/images/a (4).jpeg') }}" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 4">
+                            <img src="{{ asset('images/a (4).jpeg') }}" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Profil Posyandu 4">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#profilCarousel" data-bs-slide="prev">

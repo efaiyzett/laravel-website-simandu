@@ -115,7 +115,7 @@
     <nav class="navbar navbar-expand-lg bg-body shadow-sm sticky-top">
         <div class="container-fluid px-lg-5">
             <a class="navbar-brand fw-bold" href="#">
-                <img src="{{ asset('storage/images/Logo_Posyandu.png') }}" alt="" width="35" height="35" class="me-2">
+                <img src="{{ asset('images/Logo_Posyandu.png') }}" alt="" width="35" height="35" class="me-2">
                 SIMANDU EUPHORBIA
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -150,7 +150,7 @@
         </div>
         <div class="offcanvas-body p-4">
             <div class="text-center mb-4">
-                <img src="{{ asset('storage/images/Logo_Posyandu.png') }}" width="80" class="mb-3" alt="Logo">
+                <img src="{{ asset('images/Logo_Posyandu.png') }}" width="80" class="mb-3" alt="Logo">
                 <h4 class="fw-bold">Selamat Datang</h4>
                 <p class="text-muted">Silakan login untuk mengakses sistem SIMANDU</p>
             </div>
@@ -206,7 +206,7 @@
             <div class="row">
                 <div class="col-lg-5 mb-4">
                     <h4 class="fw-bold mb-3 d-flex align-items-center">
-                        <img src="{{ asset('storage/images/Logo_Posyandu.png') }}" alt="" width="30" class="me-2 bg-white rounded-circle">
+                        <img src="{{ asset('images/Logo_Posyandu.png') }}" alt="" width="30" class="me-2 bg-white rounded-circle">
                         SIMANDU
                     </h4>
                     <p class="text-light text-opacity-75 small">
@@ -242,7 +242,7 @@
     </section>
 
     <a href="https://wa.me/6282232799979" class="wa-float" target="_blank">
-        <img src="{{ asset('storage/images/whatsapp.png') }}" alt="WhatsApp">
+        <img src="{{ asset('images/whatsapp.png') }}" alt="WhatsApp">
     </a>
 
     <!-- SweetAlert2 js -->
