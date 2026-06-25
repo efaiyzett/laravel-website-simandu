@@ -33,10 +33,8 @@
                         @foreach($pengumuman as $data)
                         <tr>
                             <td>{{ $loop->iteration }}</td>
-                            <td>
-                                <div class="text-truncate">
-                                    {{ $data->judul }}
-                                </div>
+                            <td class="text-truncate" style="max-width: 300px;">
+                                {{ $data->judul }}
                             </td>
                             <td>
                                 <div class="form-check form-switch">
