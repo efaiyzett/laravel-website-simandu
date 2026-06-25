@@ -52,7 +52,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label">Dokumentasi <span class="text-danger">*</span></label>
+                        <label class="form-label">Dokumentasi (opsional)</label>
                         <input type="file" id="images" name="images[]" multiple accept="image/*" class="form-control">
                     </div>
 
