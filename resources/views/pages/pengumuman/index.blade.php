@@ -23,10 +23,10 @@
                 <table id="pengumumanTable" class="table table-hover align-middle nowrap w-100">
                     <thead class="table-primary">
                         <tr>
-                            <th>NO</th>
+                            <th style="width:60px">NO</th>
                             <th>JUDUL</th>
-                            <th>STATUS</th>
-                            <th>AKSI</th>
+                            <th style="width:100px">STATUS</th>
+                            <th style="width:100px">AKSI</th>
                         </tr>
                     </thead>
                     <tbody>
