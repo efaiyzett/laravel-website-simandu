@@ -144,27 +144,27 @@
                 <div class="card border-0 shadow-sm rounded-4 mb-3 bg-body">
                     <div class="card-body p-4">
                         <form action="{{ route('landing') }}#jadwal" method="GET">
-    <label class="fw-bold mb-2 text-primary">
-        <i class="bi bi-search me-2"></i>Cari Riwayat Kesehatan
-    </label>
-    
-    <div class="d-flex">
-        <input
-            type="text"
-            name="nik"
-            class="form-control"
-            placeholder="Masukkan NIK Balita / Ibu Hamil"
-            required>
-        <button
-            class="btn btn-primary ms-2 px-4">
-            Cari
-        </button>
-    </div>
-    
-    <small class="text-muted mt-2 d-block">
-        <i class="bi bi-info-circle me-1"></i> Gunakan kolom ini untuk mencari data diri dan riwayat pemeriksaan kesehatan Balita atau Ibu Hamil berdasarkan NIK.
-    </small>
-</form>
+                            <label class="fw-bold mb-2 text-primary">
+                                <i class="bi bi-search me-2"></i>Cari Riwayat Kesehatan
+                            </label>
+                            
+                            <div class="d-flex">
+                                <input
+                                    type="number"
+                                    name="nik"
+                                    class="form-control"
+                                    placeholder="Masukkan NIK Balita / Ibu Hamil"
+                                    required>
+                                <button
+                                    class="btn btn-primary ms-2 px-4">
+                                    Cari
+                                </button>
+                            </div>
+                            
+                            <small class="text-muted mt-2 d-block">
+                                <i class="bi bi-info-circle me-1"></i> Gunakan kolom ini untuk mencari data diri dan riwayat pemeriksaan kesehatan Balita atau Ibu Hamil berdasarkan NIK.
+                            </small>
+                        </form>
                         <div id="hasilCari">
                             @if($error)
                                 <div class="alert alert-danger mt-4">

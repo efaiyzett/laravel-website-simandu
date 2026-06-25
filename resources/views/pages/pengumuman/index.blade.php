@@ -25,7 +25,6 @@
                         <tr>
                             <th>NO</th>
                             <th>JUDUL</th>
-                            <th>KETERANGAN</th>
                             <th>STATUS</th>
                             <th>AKSI</th>
                         </tr>
@@ -37,11 +36,6 @@
                             <td>
                                 <div class="text-truncate" style="max-width: 300px;">
                                     {{ $data->judul }}
-                                </div>
-                            </td>
-                            <td>
-                                <div class="text-truncate" style="max-width: 300px;">
-                                    {{ $data->keterangan }}
                                 </div>
                             </td>
                             <td>
