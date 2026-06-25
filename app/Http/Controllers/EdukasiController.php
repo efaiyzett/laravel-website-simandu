@@ -21,7 +21,7 @@ class EdukasiController extends Controller
             'isi' => 'required',
             'gambar' => 'required|image|mimes:jpeg,png,jpg|max:2048',
         ]);
-        $gambarPath = $request->file('gambar')->store('edukasi', 'public');
+        $gambarPath = Storage::disk('public')->put('simandu', $request->file('gambar'));
         Edukasi::create([
             'judul' => $request->judul,
             'isi' => $request->isi,

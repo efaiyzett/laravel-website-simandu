@@ -4,7 +4,7 @@
 
 @section('content')
 <section id="beranda" class="bg-light-blue py-5">
-    <div class="container mt-5">
+    <div class="container mt-2 mt-lg-5">
         <div class="row align-items-center text-center text-lg-start">
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <h1 class="fw-bold display-5 text-primary">Sistem Informasi Manajemen Posyandu</h1>

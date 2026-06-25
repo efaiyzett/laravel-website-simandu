@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
+    <link rel="icon" type="image/x-icon" href="https://uagqdpzbgmzowxkaumod.supabase.co/storage/v1/object/sign/simandu/Logo_Posyandu.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iMzFjNTUyZS04OWJjLTQzNjktYTY0ZS0wZGQ5ZWFmOTA5ZjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJzaW1hbmR1L0xvZ29fUG9zeWFuZHUucG5nIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MjI4NzM5MywiZXhwIjoxODEzODIzMzkzfQ.B06VT7_XfaS5bzHU1ykqqkfhiyZEq6goQOfDjs8k9NU">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -280,7 +281,7 @@
     <div class="d-flex vh-100 overflow-hidden">
         <div class="d-none d-md-flex flex-column flex-shrink-0 px-4 py-3 bg-white border-end sidebar">
             <div href="#" class="d-flex align-items-center text-dark fw-bold pb-2 border-bottom">
-                <img src="{{ asset('storage/images/Logo_Posyandu.png') }}"
+                <img src="https://uagqdpzbgmzowxkaumod.supabase.co/storage/v1/object/sign/simandu/Logo_Posyandu.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iMzFjNTUyZS04OWJjLTQzNjktYTY0ZS0wZGQ5ZWFmOTA5ZjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJzaW1hbmR1L0xvZ29fUG9zeWFuZHUucG5nIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MjI4NzM5MywiZXhwIjoxODEzODIzMzkzfQ.B06VT7_XfaS5bzHU1ykqqkfhiyZEq6goQOfDjs8k9NU"
                     alt=""
                     width="35"
                     height="35"
