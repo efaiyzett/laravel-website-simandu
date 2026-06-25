@@ -305,7 +305,7 @@
             @forelse($edukasi as $e)
             <div class="col-md-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm rounded-4 bg-body">
-                    <img src="{{ asset('storage/' . $e->gambar) }}"
+                    <img src="{{ Storage::disk('s3')->url($e->gambar) }}"
                         class="card-img-top rounded-top-4"
                         alt="{{ $e->judul }}"
                         style="height: 180px; object-fit: cover;">

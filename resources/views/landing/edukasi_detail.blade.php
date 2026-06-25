@@ -43,7 +43,7 @@
                         </h1>
                         <hr>
                         <img
-                            src="{{ asset('storage/' . $edukasi->gambar) }}"
+                            src="{{ Storage::disk('s3')->url($edukasi->gambar) }}"
                             alt="{{ $edukasi->judul }}"
                             class="artikel-image rounded-4 mb-4">
                         <div class="artikel-content fs-5 text-secondary">

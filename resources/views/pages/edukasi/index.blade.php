@@ -35,7 +35,7 @@
                         @foreach($edukasi as $data)
                         <tr>
                             <td class="text-center">{{ $loop->iteration }}</td>
-                            <td><img src="{{ asset('storage/' . $data->gambar) }}" style="height: 50px; width: 50px; object-fit: cover; border-radius: 8px;"></td>
+                            <td><img src="{{ Storage::disk('s3')->url($data->gambar) }}" style="height: 50px; width: 50px; object-fit: cover; border-radius: 8px;"></td>
                             <td>
                                 <h6 class="fw-bold mb-1">{{ $data->judul }}</h6>
                                 <small class="text-muted">{!! Str::limit(strip_tags($data->isi), 80) !!}</small>

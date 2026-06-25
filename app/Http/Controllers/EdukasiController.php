@@ -43,10 +43,10 @@ class EdukasiController extends Controller
             'isi' => $request->isi,
         ];
         if ($request->hasFile('gambar')) {
-            if ($edukasi->gambar && Storage::disk('public')->exists($edukasi->gambar)) {
-                Storage::disk('public')->delete($edukasi->gambar);
+            if ($edukasi->gambar && Storage::disk('s3')->exists($edukasi->gambar)) {
+                Storage::disk('s3')->delete($edukasi->gambar);
             }
-            $data['gambar'] = $request->file('gambar')->store('edukasi', 'public');
+            $data['gambar'] = Storage::disk('s3')->putFile('simandu', $request->file('gambar'));
         }
         $edukasi->update($data);
         return redirect()->back()->with('success', 'Data berhasil diperbarui!');
@@ -55,8 +55,8 @@ class EdukasiController extends Controller
     public function destroy($id)
     {
         $edukasi = Edukasi::findOrFail($id);
-        if ($edukasi->gambar && Storage::disk('public')->exists($edukasi->gambar)) {
-            Storage::disk('public')->delete($edukasi->gambar);
+        if ($edukasi->gambar && Storage::disk('s3')->exists($edukasi->gambar)) {
+            Storage::disk('s3')->delete($edukasi->gambar);
         }
         $edukasi->delete();
         return redirect()->back()->with('success', 'Artikel berhasil dihapus!');
