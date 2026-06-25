@@ -156,8 +156,8 @@ function renderPreview() {
                     </button>
 
                     <img src="${e.target.result}"
-                         class="img-fluid rounded"
-                         style="height:150px;width:100%;object-fit:cover;">
+                        class="img-fluid rounded"
+                        style="height:150px;width:100%;object-fit:cover;">
                 </div>
             `;
 

@@ -48,8 +48,8 @@
                             <td>
                                 <div class="d-flex align-items-center">
                                     <img
-                                        src="{{ $data->foto 
-                                        ? asset('storage/' . $data->foto) 
+                                        src="{{ $data->foto
+                                        ? Storage::disk('s3')->url($data->foto)
                                         : 'https://ui-avatars.com/api/?name=' . urlencode($data->name) }}"
                                         alt="Foto Profile"
                                         class="rounded-circle object-fit-cover me-3"

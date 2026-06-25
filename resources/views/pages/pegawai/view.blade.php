@@ -20,7 +20,7 @@
         <div class="card p-4">
             <div class="d-flex justify-content-start mb-4 align-items-center">
                 @if ($pegawai->foto)
-                <img src="{{ Storage::url($pegawai->foto) }}"
+                <img src="{{ Storage::disk('s3')->url($pegawai->foto) }}"
                     alt="Foto {{ $pegawai->name }}"
                     class="rounded-circle me-3"
                     width="100"

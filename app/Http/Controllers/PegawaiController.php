@@ -38,7 +38,10 @@ class PegawaiController extends Controller
         $foto = null;
 
         if ($request->hasFile('foto')) {
-            $foto = $request->file('foto')->store('profile', 'public');
+            $foto = Storage::disk('s3')->putFile(
+                'profile',
+                $request->file('foto')
+            );
         }
 
         User::create([
@@ -59,8 +62,8 @@ class PegawaiController extends Controller
     {
         $pegawai = User::findOrFail($id);
 
-        if ($pegawai->foto && Storage::disk('public')->exists($pegawai->foto)) {
-            Storage::disk('public')->delete($pegawai->foto);
+        if ($pegawai->foto) {
+            Storage::disk('s3')->delete($pegawai->foto);
         }
 
         $pegawai->delete();
@@ -97,12 +100,13 @@ class PegawaiController extends Controller
         $foto = $pegawai->foto;
 
         if ($request->hasFile('foto')) {
-
-            if ($pegawai->foto && Storage::disk('public')->exists($pegawai->foto)) {
-                Storage::disk('public')->delete($pegawai->foto);
+            if ($pegawai->foto) {
+                Storage::disk('s3')->delete($pegawai->foto);
             }
-
-            $foto = $request->file('foto')->store('profile', 'public');
+            $foto = Storage::disk('s3')->putFile(
+                'profile',
+                $request->file('foto')
+            );
         }
 
         $data = [
@@ -123,7 +127,6 @@ class PegawaiController extends Controller
             ->route('admin.pegawai.index')
             ->with('success', 'Data pegawai berhasil diupdate');
     }
-
     public function view($id)
     {
         $pegawai = User::findOrFail($id);

@@ -97,7 +97,7 @@
                             <div class="mt-3 {{ $pegawai->foto ? '' : 'd-none' }}" id="previewContainer">
                                 <img
                                     id="previewFoto"
-                                    src="{{ $pegawai->foto ? asset('storage/' . $pegawai->foto) : '' }}"
+                                    src="{{ $pegawai->foto ? Storage::disk('s3')->url($pegawai->foto) : '' }}"
                                     class="rounded"
                                     width="150"
                                     height="150"

@@ -51,7 +51,7 @@
                                 <div class="col-md-3">
                                     <div class="position-relative border rounded p-2">
 
-                                        <img src="{{ asset('storage/' . $d->path) }}"
+                                        <img src="{{ Storage::disk('s3')->url($d->path) }}"
                                             class="img-fluid rounded"
                                             style="height:150px;width:100%;object-fit:cover;">
 

@@ -6,8 +6,6 @@ use App\Models\Pengumuman;
 use App\Models\Dokumentasi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Intervention\Image\ImageManager;
-use Intervention\Image\Drivers\Gd\Driver;
 
 class PengumumanController extends Controller
 {
@@ -36,23 +34,20 @@ class PengumumanController extends Controller
             'status' => 'active',
         ]);
 
-        $manager = new ImageManager(new Driver());
-        
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $file) {
-                $filename = uniqid() . '.webp';
-                $image = $manager->read($file);
-                Storage::disk('public')->put(
-                    'dokumentasi/' . $filename,
-                    (string) $image->toWebp(80)
+
+                $path = Storage::disk('s3')->putFile(
+                    'dokumentasi',
+                    $file
                 );
+
                 Dokumentasi::create([
                     'pengumuman_id' => $pengumuman->id,
-                    'path' => 'dokumentasi/' . $filename
+                    'path' => $path,
                 ]);
             }
         }
-
 
         return redirect()
             ->route('admin.pengumuman.index')
@@ -80,30 +75,25 @@ class PengumumanController extends Controller
             'keterangan' => $request->keterangan,
         ]);
 
-        $manager = new ImageManager(new Driver());
         if ($request->hasFile('images')) {
-
             foreach ($request->file('images') as $file) {
-                $filename = uniqid() . '.webp';
-                $image = $manager->read($file);
-                Storage::disk('public')->put(
-                    'dokumentasi/' . $filename,
-                    (string) $image->toWebp(80)
+                $path = Storage::disk('s3')->putFile(
+                    'dokumentasi',
+                    $file
                 );
                 Dokumentasi::create([
                     'pengumuman_id' => $pengumuman->id,
-                    'path' => 'dokumentasi/' . $filename
+                    'path' => $path,
                 ]);
             }
         }
 
         if ($request->delete_images) {
-
             $deleted = json_decode($request->delete_images, true);
             foreach ($deleted as $id) {
                 $dok = Dokumentasi::find($id);
                 if ($dok) {
-                    Storage::disk('public')->delete($dok->path);
+                    Storage::disk('s3')->delete($dok->path);
                     $dok->delete();
                 }
             }
@@ -117,13 +107,13 @@ class PengumumanController extends Controller
     public function destroy($id)
     {
         $pengumuman = Pengumuman::findOrFail($id);
-        $dokumentasi = Dokumentasi::where('pengumuman_id', $id)->get();
         foreach ($pengumuman->dokumentasi as $dok) {
-            Storage::disk('public')->delete($dok->path);
+            Storage::disk('s3')->delete($dok->path);
             $dok->delete();
         }
         $pengumuman->delete();
-        return redirect()->route('admin.pengumuman.index')
+        return redirect()
+            ->route('admin.pengumuman.index')
             ->with('success', 'Pengumuman berhasil dihapus.');
     }
 
