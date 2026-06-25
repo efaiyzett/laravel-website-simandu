@@ -85,15 +85,16 @@ class LandingPageController extends Controller
 
     public function pengumuman()
     {
-        $pengumuman = Pengumuman::all();
+        $pengumuman = Pengumuman::where('status', 'active')->orderBy('created_at', 'desc')->get();
         return view('landing.pengumuman', compact('pengumuman'));
     }
 
     public function pengumuman_detail($id)
     {
-        $pengumuman = Pengumuman::findOrFail($id);
+        $pengumuman = Pengumuman::where('status', 'active')->findOrFail($id);
         $dokumentasi = Dokumentasi::where('pengumuman_id', '=', $id)->get();
         $pengumumanLain = Pengumuman::where('id', '!=', $id)
+            ->where('status', 'active')
             ->latest()
             ->take(5)
             ->get();

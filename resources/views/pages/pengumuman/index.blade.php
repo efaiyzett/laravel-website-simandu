@@ -34,7 +34,7 @@
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>
-                                <div class="text-truncate" style="max-width: 300px;">
+                                <div class="text-truncate" style="max-width: 600px;">
                                     {{ $data->judul }}
                                 </div>
                             </td>
