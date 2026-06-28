@@ -88,10 +88,10 @@
                         <div class="row g-3">
                             @foreach($dokumentasi as $d)
                                 <div class="{{ $total == 1 ? 'col-12' : 'col-12 col-md-6' }}">
-                                    <img 
-                                    src="{{ Storage::disk('s3')->url($d->path) }}"
+                                    <img
+                                        src="{{ Storage::disk('s3')->url($d->path) }}"
                                         class="img-fluid rounded shadow-sm w-100"
-                                        style="height:250px; object-fit:cover;">
+                                        style="max-height:250px; object-fit:contain;">
                                 </div>
                             @endforeach
                         </div>
