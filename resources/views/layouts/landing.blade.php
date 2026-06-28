@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="uehoMyNqXUrYutOkqVxyi-OufmWWpp2hMnosQE_hPt4" />
     <meta name="keywords" content="Posyandu Lumajang, SIMANDU, Posyandu Euphorbia, Kunir Lor">
+    <meta name="description" content="SIMANDU Posyandu Euphorbia merupakan sistem informasi Posyandu Desa Kunir Lor Kabupaten Lumajang yang menyediakan informasi kegiatan, pengumuman, dan pelayanan kesehatan.">
     <title>@yield('title')</title>
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
