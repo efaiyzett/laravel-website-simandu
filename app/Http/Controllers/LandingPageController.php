@@ -146,4 +146,31 @@ class LandingPageController extends Controller
             })
         );
     }
+
+    public function sitemap()
+{
+    $content = '<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        <url>
+            <loc>'.url('/').'</loc>
+            <lastmod>'.now()->toAtomString().'</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+        </url>';
+
+    // Tambahkan link dinamis jika perlu (Contoh: untuk edukasi)
+    $edukasis = \App\Models\Edukasi::all();
+    foreach ($edukasis as $e) {
+        $content .= '
+        <url>
+            <loc>'.route('landing.edukasi', $e->id).'</loc>
+            <lastmod>'.$e->updated_at->toAtomString().'</lastmod>
+            <priority>0.8</priority>
+        </url>';
+    }
+
+    $content .= '</urlset>';
+
+    return response($content)->header('Content-Type', 'application/xml');
+}
 }

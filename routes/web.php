@@ -181,3 +181,5 @@ Route::prefix('kader')->middleware(['auth', 'role:kader'])->group(function () {
         Route::delete('/ibuhamil/tensi/{id}', 'destroy_tensi')->name('kader.ibu.tensi.destroy');
     });
 });
+
+Route::get('/sitemap.xml', [LandingPageController::class, 'sitemap']);
