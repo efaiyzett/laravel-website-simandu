@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
-    <link rel="icon" type="image/x-icon" href="https://uagqdpzbgmzowxkaumod.supabase.co/storage/v1/object/sign/simandu/Logo_Posyandu.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iMzFjNTUyZS04OWJjLTQzNjktYTY0ZS0wZGQ5ZWFmOTA5ZjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJzaW1hbmR1L0xvZ29fUG9zeWFuZHUucG5nIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MjI4NzM5MywiZXhwIjoxODEzODIzMzkzfQ.B06VT7_XfaS5bzHU1ykqqkfhiyZEq6goQOfDjs8k9NU">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
