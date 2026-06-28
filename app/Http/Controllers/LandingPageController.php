@@ -148,31 +148,81 @@ class LandingPageController extends Controller
     }
 
     public function sitemap()
-{
-    $content = '<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-        <url>
-            <loc>'.url('/').'</loc>
-            <lastmod>'.now()->toAtomString().'</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>1.0</priority>
-        </url>';
+    {
+        $content = '
+        <?xml version="1.0" encoding="UTF-8"?>
+        <?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
+        <urlset
+            xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+        xmlns:fo="http://www.w3.org/1999/XSL/Format"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+            xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    // Tambahkan link dinamis jika perlu (Contoh: untuk edukasi)
-    $edukasis = \App\Models\Edukasi::all();
-    foreach ($edukasis as $e) {
-        $content .= '
+
         <url>
-            <loc>'.route('landing.edukasi', $e->id).'</loc>
-            <lastmod>'.$e->updated_at->toAtomString().'</lastmod>
-            <priority>0.8</priority>
-        </url>';
+        <loc>https://simandu.vercel.app/</loc>
+        <lastmod>2026-06-28T03:08:10+00:00</lastmod>
+        <priority>1.00</priority>
+        </url>
+        <url>
+        <loc>https://simandu.vercel.app/jadwal</loc>
+        <lastmod>2026-06-28T03:08:10+00:00</lastmod>
+        <priority>0.80</priority>
+        </url>
+        <url>
+        <loc>https://simandu.vercel.app/pengumuman/12</loc>
+        <lastmod>2026-06-28T03:08:10+00:00</lastmod>
+        <priority>0.80</priority>
+        </url>
+        <url>
+        <loc>https://simandu.vercel.app/pengumuman/11</loc>
+        <lastmod>2026-06-28T03:08:10+00:00</lastmod>
+        <priority>0.80</priority>
+        </url>
+        <url>
+        <loc>https://simandu.vercel.app/pengumuman</loc>
+        <lastmod>2026-06-28T03:08:10+00:00</lastmod>
+        <priority>0.80</priority>
+        </url>
+        <url>
+        <loc>https://simandu.vercel.app/pengumuman/10</loc>
+        <lastmod>2026-06-28T03:08:10+00:00</lastmod>
+        <priority>0.64</priority>
+        </url>
+        <url>
+        <loc>https://simandu.vercel.app/pengumuman/9</loc>
+        <lastmod>2026-06-28T03:08:10+00:00</lastmod>
+        <priority>0.64</priority>
+        </url>
+        <url>
+        <loc>https://simandu.vercel.app/pengumuman/8</loc>
+        <lastmod>2026-06-28T03:08:10+00:00</lastmod>
+        <priority>0.64</priority>
+        </url>
+        <url>
+        <loc>https://simandu.vercel.app/pengumuman/7</loc>
+        <lastmod>2026-06-28T03:08:10+00:00</lastmod>
+        <priority>0.64</priority>
+        </url>
+        <url>
+        <loc>https://simandu.vercel.app/pengumuman/6</loc>
+        <lastmod>2026-06-28T03:08:10+00:00</lastmod>
+        <priority>0.64</priority>
+        </url>
+        <url>
+        <loc>https://simandu.vercel.app/pengumuman/5</loc>
+        <lastmod>2026-06-28T03:08:10+00:00</lastmod>
+        <priority>0.64</priority>
+        </url>
+
+        </urlset>
+        ';
+
+        return response($content)
+            ->header('Content-Type', 'application/xml')
+            ->header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
     }
-
-    $content .= '</urlset>';
-
-    return response($content)
-        ->header('Content-Type', 'application/xml')
-        ->header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
-}
 }
