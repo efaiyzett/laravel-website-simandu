@@ -91,7 +91,7 @@
                                     <img
                                         src="{{ Storage::disk('s3')->url($d->path) }}"
                                         class="img-fluid rounded shadow-sm w-100"
-                                        style="max-height:250px; object-fit:contain;">
+                                        style="max-height:300px; object-fit:contain;">
                                 </div>
                             @endforeach
                         </div>
