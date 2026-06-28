@@ -171,6 +171,8 @@ class LandingPageController extends Controller
 
     $content .= '</urlset>';
 
-    return response($content)->header('Content-Type', 'application/xml');
+    return response($content)
+        ->header('Content-Type', 'application/xml')
+        ->header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
 }
 }
